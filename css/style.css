@@ -1,0 +1,1112 @@
+* {
+    font-family: 'Raleway', sans-serif;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+p {
+    font-family: 'Raleway', sans-serif !important;
+}
+
+a:visited {
+    color: black;
+}
+.navbar {
+    /* border: 2px red solid;  */
+    border-radius: 5px;
+    /* This sets the display to flex so that it doesnmt take an entire line */
+    display: flex;
+    padding: 10px;
+}
+
+h2 {
+    font-family: 'Raleway', sans-serif;
+
+    font-weight: bold;
+}
+
+.logo {
+    /* border: 2px red solid; */
+    width:125px ;
+    height: 50%;
+    padding-left: 20px ;
+   
+}
+
+
+.rightnav {
+    /* border: 2px red solid; */
+    display: flex;
+    margin-left: auto;
+    align-items: center;
+}
+
+.headright {
+    /* border: 2px red solid; */
+    padding-left: 30px;
+    text-decoration: none;
+    padding-right: 50px;
+    font-family: 'Raleway', sans-serif;
+    box-sizing: border-box;
+    font-weight: 500;
+}
+
+.activities:hover {
+    border-top: #0065FC 2px solid;
+    height: auto;
+    padding: 30px;
+    color: #0065FC;
+}
+
+.acommodations:hover {
+    border-top: blue 2px solid ;
+    padding: 30px;
+    color:#0065FC;
+}
+
+ @media all and (max-width: 768px) { 
+
+     .navbar {
+        display: block;
+        text-align: center;
+    }
+
+    .logo {
+        padding-bottom: 20px;
+    }
+
+    .headright{
+        display: flex;
+        flex-shrink: 1;
+       
+    }
+
+    .rightnav {
+        justify-content:center ;
+    }
+
+    .activities:hover {
+        border-top: none;
+        border-bottom: #0065FC 3px solid;
+        padding: 10px;
+    }
+
+    .acommodations:hover{
+        border-top: none;
+        border-bottom: #0065FC 3px solid ;
+        padding: 10px;
+        
+    }
+
+    .introtext {
+        margin-left: -40px
+    }
+
+    .searchtype {
+        display: none;
+    }
+
+    .search-form {
+        display: flex;
+        justify-content: flex-start;
+    
+    }
+
+    .b-search {
+        position: relative;
+        /* height: 32px;
+        /* bottom: 1px; */
+        width: 40px; 
+    }
+
+    .b-map { 
+        width: 40px;
+    }
+
+
+
+    .buttons {
+        /* display: flex;
+        /* Flex wrap allowed the filters to move as the
+        browser got smaller */
+        flex-wrap: wrap;
+        /* this somehow made the filters in line!!! */
+        margin-left: -65px;
+         
+    }
+
+ 
+
+    .b-filter { 
+        display: flex;
+    }
+
+    .filter {
+    
+        /* Allowed me to wrap the buttons under filter title */
+        flex-wrap: wrap;
+    }
+
+    .filter > h3 {
+        height: fit-content;
+        margin-left: -30px;
+        width: 100%;
+        
+    }
+
+    #lowone {
+        order: -1;
+        
+    }
+
+    #romone {
+     
+        order: -1;
+    }
+
+
+
+
+    .mainsection {
+        /* border: red 4px solid; */
+        display: flex;
+
+        /* width: 570px; */
+    }
+
+    .cards {
+        /* border: 4px blue solid;    */
+        /* margin-left: -60px; */
+        /* Making the cards div have an order of 1 allows the most pop div to come above */
+        order: 1;
+ 
+        
+    }
+    
+
+
+    .imgone {
+        /* border: purple 3px solid; */
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+ 
+
+    .headertwo {
+        /* border: aqua 4px solid; */
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+
+    .mostpop{
+        /* border: yellow 4px solid; */
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+
+    .cardstwo {
+        display: flex;
+        flex-wrap: wrap;
+        /* border: green 4px solid; */
+
+    }
+
+    .imgtwo {
+        flex-wrap: wrap;
+    }
+
+
+
+} 
+@media all and (min-width: 768px){
+    
+    #searchicon {
+        display: none;
+    }
+
+}
+
+.introtext {
+    
+    font-family: 'Raleway', sans-serif;
+    box-sizing: border-box;
+    font-weight: 500;    
+    padding-left: 50px;
+}
+
+
+
+.search-form {
+    display: flex;
+    /* border: 2px red solid; */
+    height: 40px; 
+    padding-left: 50px;
+    padding-bottom: 20px;
+}
+
+.b-search {
+    margin-left: -8px; 
+    padding-left: 10px;
+    background-color: #0065FC;
+    border-radius: 10px;
+    color: white;
+    border: 1px  #0065FC;
+
+}
+
+.inputtext {
+    position: relative;
+    margin-left: -10px;
+
+}
+
+.b-map{
+    background-color: #F2F2F2;
+    width: 40px;
+    padding-right: 12px;
+    /* margin-right: -5px; */
+    border-radius: 10px;
+    border: #F2F2F2 1px;
+}
+
+
+.filter {
+    display: flex;
+    /* align-items: center; */
+    /* flex-wrap: wrap; */
+    flex-direction: row;
+
+    padding-left: 50px;
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    /* border: red 1px solid; */
+    
+
+}
+
+.buttons :hover {
+    color: #0065FC;
+    font-weight: bolder;
+}
+
+/* .buttons > span {
+    color: red;
+    font-weight: bold;
+} */
+
+
+
+
+.img-filter { 
+    background-color:#DEEBFF;
+    border: 2px solid #DEEBFF;
+    border-radius: 60%;
+    color: #0065FC !important;
+    padding:15px;
+    margin-left: -10px;
+    /* border: 5px blue solid; */
+    margin-right: 10px;
+
+}
+
+
+
+.b-filter {
+    height: 45px;
+    border: 3px #F2F2F2 solid;
+    border-radius: 60px;
+    /* border: 2px green solid;      */
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+    background-color: white;
+    margin-left: 20px;
+    padding-right: 15px;
+    margin-bottom: 10px;
+    cursor: pointer;
+
+}
+
+
+
+#pets {
+    width: 175px;
+}
+
+.mainsection {
+
+    display: flex;
+    flex-wrap: nowrap;
+
+
+    /* height: 750px; */
+}
+
+.info {
+    margin-left: 60px;
+    /* margin: 20px 0; */
+    width: 40%;
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+}
+.info i{
+    color: #0065FC;
+    border-radius: 50%;
+    padding: 5px 10px;
+    border: 1px solid #dfdede; 
+}
+
+#iicon {
+    border: 2px #F2F2F2 solid ;
+    border-radius: 40%;
+    padding: 10px;
+    margin-right: 10px;
+}
+
+
+
+.city {
+    padding-left: 43px;
+}
+
+
+.cards {
+    border: 5px #F2F2F2 solid;
+    background-color: #F2F2F2;
+    display: flex;
+    border-radius: 20px;
+    margin-left: 50px;
+    width: 65%;
+    flex-wrap: wrap;
+    /* border: 5px yellow solid; */
+    justify-content: center;
+    align-items: center;
+    height:fit-content; 
+}
+
+.acom {
+    /* This allowed the title to start its own line */
+    width: 100%;
+    margin-left: 30px;
+    margin-bottom: -5px;
+
+    
+    
+}
+
+.cardone {    
+    border: 8px white solid;
+    background-color: white;
+    border-radius: 15px;
+    /* width: fit-content; */
+    margin-left: 20px; 
+    margin-top: 20px;
+    /* width: 27.5%; */
+    /* border: green 5px solid;   */
+    height: 215px;
+    margin-bottom: 20px;
+}
+
+.imgone {
+    width: 250px;
+    height: 125px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-color: #F2F2F2;
+    /* border: #0065FC 1px solid; */
+    
+}
+
+.cardbody {
+    /* border: 1px blue solid; */
+    /* display: flex; */
+
+    line-height: 2px;
+    padding-left: 10px;
+    
+    background-color: white;
+    
+}
+
+.showmore {
+    width: 100%;
+    margin-left: 30px;
+    font-weight: bolder;
+    font-family: 'Raleway', sans-serif;
+
+
+    /* border: red 4px solid; */
+}
+
+.footone {
+    /* border: 1px red solid; */
+
+}
+
+.sectiontwo {
+    width: 35%;
+    /* border: 5px red solid; */
+    margin-right: 30px;
+    margin-left: 30px;
+    background-color: #F2F2F2;
+    overflow: hidden;
+    border-radius: 20px;
+    height: 640px;
+    flex-wrap: wrap;
+
+
+}
+
+
+
+
+
+
+.cardpop {
+    border: 8px white solid;
+    background-color: white;
+    border-radius: 15px;
+    /* width: fit-content; */
+    margin-left: 20px;
+    margin-top: 20px;
+    /* width: 27.5%; */ 
+    height: 100px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+    border: green 5px solid;
+}
+
+.imgtwo {
+    width: 100px;
+    height: 25px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius:  10px;
+    background-color: #F2F2F2;
+    /* border: #0065FC 5px solid; */
+
+
+}
+
+.cardpopbody {
+    /* line-height: 2px;
+    padding-left: 10px; */
+    height: 100px;
+    flex-wrap: wrap;
+    
+    background-color: white;
+}
+
+
+.imgtwo {
+    width: 180px;
+    height: 100%;
+    margin-left: -10px;
+    /* padding-top: 7px; */
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    background-color: white;
+}
+
+
+.cardstwo {
+    display: flex;
+    border: 8px white solid;
+    background-color:white;
+    border-radius: 15px;
+    /* border: #F2F2F2 3px solid; */
+    width: 400px;   
+    padding-left: 10px;
+    height:20% ;
+    /* flex-wrap: wrap; */
+    /* border: blue 4px solid; */
+    
+}
+
+.cardbodytwo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-top: 25px;
+    font-family: 'Raleway', sans-serif;
+    /* margin: 10px 30px; */
+    /* border: green 4px solid; */
+    width: 250px;
+    margin-left: 20px;
+    line-height: 20px;
+    /* border: green 4px solid; */
+
+    
+}
+
+.title {
+    /* border: #0065FC 3px solid; */
+    font-size: 17px;
+    /* margin-top: -10px; */
+
+}
+
+.sectiontwo {
+    /* height:550px; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+
+.headertwo {
+    display: flex;
+    /* border: 5px red solid; */
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 30px ;
+    font-weight: bold;
+    width: 450px;
+}
+
+/* .roomprice {
+    margin-top: -20px;
+} */
+
+.foottwo {
+    /* border: black 3px solid; */
+    margin-bottom: 50px;
+    margin-top: 20px;
+}
+
+@media all and (max-width: 768px) { 
+
+    .info {
+        /* border: 4px solid blue; */
+        width: 100%;
+        margin-left: 0px;
+
+    }
+
+
+    .info > p {
+        /* border: red 4px solid; */
+        display: flex;
+        /* width: 400px; */
+        flex-wrap: wrap;
+        /* display: flex;
+        flex-wrap: nowrap; */
+    }
+
+
+
+    .mainsection {
+
+        flex-wrap: wrap;
+        width: 100%;
+        /* overflow: hidden; */
+        justify-content: center;
+    
+        
+    }
+
+    .cards {
+        order: 1;
+        border: none;
+        width: 95%;
+        margin: 0px;
+        border-radius: 0px;
+        background-color: white;
+
+    }
+
+
+
+    .cardone {
+        border: rgba(3, 3, 3, 0.274) 2px inset; 
+        /* box-shadow:rgba(3, 3, 3, 0.021) 10px 2px; */
+        margin-left: 0px;
+        width: 90%;
+        height: 180px;
+        padding: 5px;
+        overflow: visible; 
+        /* background-color: #F2F2F2;      */
+     
+
+    }
+
+    .imgone {
+        /* border: rebeccapurple 4px solid; */
+        height: 100px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+
+
+
+    }
+
+    .cardbody {
+
+        /* border: yellow 2px solid; */
+        padding: 0px;
+        /* margin: 0px; */
+        margin-top: -10px;
+        /* height: 0px; */
+        width: 98%;
+        background-color: white;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        /* border: #0065FC 3px solid; */        
+    }
+
+    .footone {
+
+    }
+    .sectiontwo {
+        /* border: 3px blue solid; */
+        border-radius: 0px;
+        margin: 0px;
+        width: 100%;
+        order: -1;     
+    }
+
+    .headertwo {
+        /* border: yellow 4px solid; */
+    }
+
+    .cardstwo {
+        /* border: pink 4px solid; */
+        flex-wrap: nowrap; 
+        width: 85%;
+
+    }
+
+    .imgtwo {
+        /* border: orange 4px solid; */
+        width:125px
+    }
+
+    .cardbodytwo { 
+        /* border: 4px red solid; */
+        display: flex;
+        align-items: flex-start;
+    }
+
+    .foottwo {
+        /* width: 70%; */
+    }
+    
+
+}
+
+.activitiessection {
+    /* margin: 0px 30px; */
+    margin-left: 50px;
+    height: 500px;
+    /* overflow: hidden; */
+    display: flex;
+    flex-direction: column;
+}
+
+.actcard {
+    width: 23%;
+    
+}
+
+.activitiescards {
+    display: flex;
+    height: 420px;
+    flex-wrap: wrap;    
+    flex-direction: column;
+
+    /* justify-content: space-around; */
+
+   
+}
+
+
+.oldport {
+    flex: 0 1 100%;    
+    overflow: hidden;
+    border-radius: 20px;
+    background-color: #F2F2F2;
+
+}
+
+.oldportimg {
+    width: 100%;
+    height: 90%;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+} 
+
+.activitiescards p {
+    margin-left: 10px;
+    margin-top: 10px;
+
+}
+
+.fa-star {
+    color: #0065FC;
+}
+
+.fa-solid {
+    color: #dedede;
+}
+
+#staricon {
+    color: black;
+}
+
+
+.pomeguesfort {
+    box-sizing: border-box;
+    border-radius: 20px;
+    background-color: #F2F2F2;
+    padding-bottom: 20px;
+    flex: 0 1 60%;
+    height: 60%;
+    overflow: hidden;
+}
+
+.pomeguesfortimg {
+
+    width: 100%;
+    height: 93%;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    
+}
+
+/* .pomeguesfort > p {
+    padding: 0px 0px 10px 20px;
+} */
+
+.frioulisland {
+    box-sizing: border-box;
+    border-radius: 20px;
+    background-color: #F2F2F2;
+    flex: 0 1 30%;
+    height: 30%;
+    overflow: hidden;
+    margin-top: 40px;
+}
+
+.frioulislandimg {
+    width: 100%;
+    height: 65%;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+.calanques {
+    /* box-sizing: border-box; */
+    height: 100%;
+    overflow: hidden;
+    border-radius: 20px;
+    background-color: #F2F2F2;
+    flex: 0 1 100%;
+}
+
+.calanquesimg {
+    /* height: 100px; */
+    height: 90%;
+
+}
+.notre {
+    box-sizing: border-box;
+    height: 45%;
+    overflow: hidden;
+    border-radius: 20px;
+    background-color: #F2F2F2;
+    flex: 0 1 45%;
+}
+
+.notreimg {
+    height: 80%;
+    width: 100%;
+
+}
+
+.longchamp {
+    box-sizing: border-box;
+    height: 45%;
+    overflow: hidden;
+    border-radius: 20px;
+    background-color: #F2F2F2;
+    /* border: sienna 5px solid; */
+    flex: 0 1 45%;
+    margin-top: 40px;
+
+    /* width: 22%; */
+
+}
+
+.longchampimg {
+    height: 80%;
+    width: 100%;
+
+}
+
+.nav-footer {
+    display: flex;
+    justify-content: flex-start;
+    background-color: #F2F2F2;
+    /* border: red 4px solid; */
+}
+
+.nav2   {
+    list-style-type: none;
+    /* border: blueviolet 4px solid; */
+    padding-right:300px;
+    margin-left: 15px;
+    white-space: nowrap;
+    overflow: hidden;
+    /* line-height: 25px; */
+}
+
+.nav2 > li {
+    margin-top: 10px;
+}
+
+.li-title {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+ @media all and  (max-width: 768px) { 
+
+    .showmore {
+        margin-left: 20px;
+        font-weight: bolder;
+    }
+
+    .activitiessection {
+        margin-left: 0px;
+        height: fit-content;
+    }
+
+    
+
+    .activitiessection > h3 {
+        padding-left: 20px;
+        font-weight: bolder;
+    }
+
+    .activitiescards{
+        /* border: red 4px solid; */
+        height: fit-content;
+   
+        display: flex;
+        flex-direction: row;
+
+    
+    }
+
+    .activitiescards > div {
+        /* border: blue 40px solid; */
+
+        height: 150px;
+        overflow: visible;
+        margin: 0px;
+        margin-bottom: 40px;
+        display: block;
+        flex: 1 1 100%;
+        border-radius: 0px;
+        background-color: white;
+        
+
+    }
+
+    .activitiescards > img {
+
+        overflow: visible;
+        border-top-right-radius: 20px;
+        border-top-left-radius: 20px;
+        background-color: white;
+        width: 96%;
+        margin: 0px;
+        
+    }
+
+    .cardtwobody {
+        border: grey 1px solid;
+        height:40px;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        margin-top: -5px;
+        
+        
+    }
+
+    .cardtwobody > p { 
+        margin-left: 20px;
+        font-weight: bolder;
+    }
+
+    .calanques {
+        
+        padding-bottom: 20px;
+    }
+
+    .calanquesimg {
+
+        width: 100%;
+        border-top-right-radius: 20px;
+        border-top-left-radius: 20px;
+    }
+   
+
+    .notreimg {
+        border-top-right-radius: 20px;
+        border-top-left-radius: 20px;
+
+    }
+
+    .longchampimg {
+        border-top-right-radius: 20px;
+        border-top-left-radius: 20px;
+        height: 125px;
+
+    }
+
+    .oldport {
+        padding-bottom: 20px;
+    }
+
+    .longchamp {
+        padding-bottom: 50px;
+    }
+
+    .activitiescards>img {
+        /* height: 1200px; */
+    }
+
+    .frioulislandimg {
+        height: 120px;
+    }
+
+    .pomeguesfortimg {
+
+    }
+
+
+    .nav-footer {
+
+
+        width: 100%;
+        height: 100%;
+
+        flex-wrap: wrap;
+        overflow: hidden;
+
+
+    }
+
+    .sectiontwo {
+    
+        width: 100%;
+        padding-left: 0px;
+        margin: 0px;
+    }
+
+}
+
+@media all and  (max-width: 992px) {
+
+    .filter-result {
+        width: 100%;
+    }
+
+    .mainsection {
+        width: 100%;
+        /* border: green solid 4px; */
+        flex-direction: row;
+    
+    }
+    .cards {
+        /* border: blue 4px solid; */
+        width: 50%;
+        flex-wrap: wrap;    
+
+    } 
+
+    .sectiontwo {
+        width:50%;
+        /* border: red solid 4px; */
+        display: flex;
+    }
+
+    .acom {
+        padding: 20px 0 0 20px;
+        margin: 0px;
+        font-weight: bolder;
+    }
+
+    .cardone {
+        justify-content: center;
+        align-items: center;
+
+        margin: 0px;
+        margin-top: 20px;
+    }
+
+    .sectiontwo {
+        width: 50%;
+        overflow: hidden;
+        padding-bottom: 50px;
+    }
+
+    .cardstwo {
+        width: 85%;
+        height: 25%;
+        margin-top: 25px;
+    }
+
+    .cardbodytwo {
+        flex-wrap: nowrap;
+    }
+
+    .imgtwo {
+        height: 100%;
+    }
+
+    .activitiessection {
+        width: 100% ;
+      
+        margin: 0px;
+   
+    }
+
+    .activitiessection > h3 {
+        display: flex;
+        justify-content: center;
+
+    }
+    
+    .cardtwobody {
+        display: flex;
+        font-size: 14px;
+        text-align: center;
+
+    }
+    .nav2 {
+        padding: 35px;
+
+    }
+
+    .cards {
+        width: 95%;
+    }
+
+    .sectiontwo {
+        width: 100%;
+    }
+} 
+
+
